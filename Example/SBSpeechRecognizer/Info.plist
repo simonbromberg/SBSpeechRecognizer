@@ -35,5 +35,9 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 	</array>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Make sure to include this description for why you&apos;re using speech recognition in your app or else your app will crash!</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Make sure to include this description for why you&apos;re using the microphone in your app or else your app will crash!</string>
 </dict>
 </plist>

@@ -3,9 +3,4 @@ use_frameworks!
 target 'SBSpeechRecognizer_Example' do
   pod 'SBSpeechRecognizer', :path => '../'
 
-  target 'SBSpeechRecognizer_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

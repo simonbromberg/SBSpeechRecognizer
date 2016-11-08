@@ -1,0 +1,22 @@
+{
+  "name": "SBSpeechRecognizer",
+  "version": "0.1.0",
+  "summary": "A short description of SBSpeechRecognizer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SBSpeechRecognizer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "simonbromberg": "bshimmy@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SBSpeechRecognizer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SBSpeechRecognizer/Classes/**/*"
+}
