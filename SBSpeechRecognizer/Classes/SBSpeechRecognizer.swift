@@ -134,6 +134,8 @@ public class SBSpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
     
     public func stopRecording() {
         audioEngine.stop()
+        audioEngine.inputNode.removeTap(onBus: 0) // Remove tap on bus when stopping recording.
+        
         recognitionRequest?.endAudio()
         
         speechRecognitionTimeout?.invalidate()
