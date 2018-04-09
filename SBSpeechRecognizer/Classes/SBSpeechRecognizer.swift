@@ -67,6 +67,7 @@ public class SBSpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
         if let recognitionTask = recognitionTask {
             recognitionTask.cancel()
             self.audioEngine.stop()
+            self.audioEngine.inputNode.removeTap(onBus: 0)
             self.recognitionTask = nil
             self.recognitionRequest = nil
             self.recognitionTask = nil
