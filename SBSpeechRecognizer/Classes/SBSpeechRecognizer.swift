@@ -67,6 +67,7 @@ public class SBSpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
         if let recognitionTask = recognitionTask {
             recognitionTask.cancel()
             self.audioEngine.stop()
+            self.audioEngine.inputNode.removeTap(onBus: 0)
             self.recognitionTask = nil
             self.recognitionRequest = nil
             self.recognitionTask = nil
@@ -79,7 +80,7 @@ public class SBSpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
         
         recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
         
-        guard let inputNode = audioEngine.inputNode else { fatalError("Audio engine has no input node") }
+        let inputNode = audioEngine.inputNode
         guard let recognitionRequest = recognitionRequest else { fatalError("Unable to created a SFSpeechAudioBufferRecognitionRequest object") }
         
         // Configure request so that results are returned before audio recording is finished
@@ -134,6 +135,8 @@ public class SBSpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
     
     public func stopRecording() {
         audioEngine.stop()
+        audioEngine.inputNode.removeTap(onBus: 0) // Remove tap on bus when stopping recording.
+        
         recognitionRequest?.endAudio()
         
         speechRecognitionTimeout?.invalidate()
