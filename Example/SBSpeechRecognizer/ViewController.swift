@@ -37,14 +37,13 @@ class ViewController: UIViewController, SBSpeechRecognizerDelegate {
     }
     
     @IBAction func toggleSpeechRecognition() {
-        if TARGET_OS_SIMULATOR != 0 {
+        #if targetEnvironment(simulator)
             let alert = UIAlertController(title: "Simulator unsupported", message: "Microphone usage is currently unsupported on the iOS simulator", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             
             present(alert, animated: true, completion: nil)
-            
-            return
-        }
+        
+        #else
         
         isRecording = !isRecording
         updateButtonText()
@@ -61,6 +60,8 @@ class ViewController: UIViewController, SBSpeechRecognizerDelegate {
         else {
             speechRecognizer.stopRecording()
         }
+        
+        #endif
     }
     
     func updateButtonText() {
