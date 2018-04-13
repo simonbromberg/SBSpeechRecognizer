@@ -1,6 +1,0 @@
-framework module SBSpeechRecognizer {
-  umbrella header "SBSpeechRecognizer-umbrella.h"
-
-  export *
-  module * { export * }
-}
