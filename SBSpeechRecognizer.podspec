@@ -12,9 +12,8 @@ A Swift wrapper for Apple's SFSpeechRecognizer that handles set up and timing
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'simonbromberg' => 'me@sbromberg.com' }
   s.source           = { :git => 'https://github.com/simonbromberg/SBSpeechRecognizer.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/shimmb'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.3'
 
   s.source_files = 'SBSpeechRecognizer/Classes/**/*'
 
