@@ -1,7 +1,6 @@
 # SBSpeechRecognizer
 
 SBSpeechRecognizer provides a class to make it easier to interact with speech recognition in iOS.
-Current Status: incomplete.
 
 ## Example
 
