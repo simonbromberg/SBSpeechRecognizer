@@ -1,5 +1,5 @@
 PODS:
-  - SBSpeechRecognizer (0.1.0)
+  - SBSpeechRecognizer (0.2.0)
 
 DEPENDENCIES:
   - SBSpeechRecognizer (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SBSpeechRecognizer: 7c67ff3c2916609718e1a7e9d64b8a1454dd5551
+  SBSpeechRecognizer: b78e27c15fc9952e3b53300863c3298be10902ce
 
 PODFILE CHECKSUM: 8c2e0cffa69c069ee33a4e7d1dca6ea0c53ae937
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.7.2
