@@ -1,7 +1,0 @@
-use_frameworks!
-platform :ios, '11.3'
-
-target 'SBSpeechRecognizer_Example' do
-  pod 'SBSpeechRecognizer', :path => '../'
-
-end
