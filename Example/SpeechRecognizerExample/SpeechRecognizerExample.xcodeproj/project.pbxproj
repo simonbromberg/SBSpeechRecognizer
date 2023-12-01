@@ -11,6 +11,7 @@
 		F498F43A2B19B4C200672FFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F498F4392B19B4C200672FFF /* ContentView.swift */; };
 		F498F43C2B19B4C300672FFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F498F43B2B19B4C300672FFF /* Assets.xcassets */; };
 		F498F43F2B19B4C300672FFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F498F43E2B19B4C300672FFF /* Preview Assets.xcassets */; };
+		F498F4472B19B58B00672FFF /* SBSpeechRecognizer in Frameworks */ = {isa = PBXBuildFile; productRef = F498F4462B19B58B00672FFF /* SBSpeechRecognizer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F498F4472B19B58B00672FFF /* SBSpeechRecognizer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = SpeechRecognizerExample;
+			packageProductDependencies = (
+				F498F4462B19B58B00672FFF /* SBSpeechRecognizer */,
+			);
 			productName = SpeechRecognizerExample;
 			productReference = F498F4342B19B4C200672FFF /* SpeechRecognizerExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = F498F42B2B19B4C200672FFF;
+			packageReferences = (
+				F498F4452B19B58B00672FFF /* XCRemoteSwiftPackageReference "SBSpeechRecognizer" */,
+			);
 			productRefGroup = F498F4352B19B4C200672FFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F498F4452B19B58B00672FFF /* XCRemoteSwiftPackageReference "SBSpeechRecognizer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simonbromberg/SBSpeechRecognizer";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F498F4462B19B58B00672FFF /* SBSpeechRecognizer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F498F4452B19B58B00672FFF /* XCRemoteSwiftPackageReference "SBSpeechRecognizer" */;
+			productName = SBSpeechRecognizer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F498F42C2B19B4C200672FFF /* Project object */;
 }
