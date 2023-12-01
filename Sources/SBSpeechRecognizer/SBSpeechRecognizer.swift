@@ -7,7 +7,6 @@
 //
 
 import Speech
-import UIKit
 
 public protocol SBSpeechRecognizerDelegate: AnyObject {
   func speechRecognitionFinished(transcription: String)
@@ -60,7 +59,7 @@ public class SBSpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
   private func restartSpeechTimeout() {
     speechRecognitionTimeout?.invalidate()
 
-    speechRecognitionTimeout = Timer.scheduledTimer(timeInterval: speechTimeoutInterval, target: self, selector: #selector(timedOut), userInfo: nil, repeats: false)
+    speechRecognitionTimeout = .scheduledTimer(timeInterval: speechTimeoutInterval, target: self, selector: #selector(timedOut), userInfo: nil, repeats: false)
   }
 
   public func startRecording() throws {
@@ -74,8 +73,8 @@ public class SBSpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
     }
 
     let audioSession = AVAudioSession.sharedInstance()
-    try audioSession.setCategory(AVAudioSession.Category(rawValue: convertFromAVAudioSessionCategory(AVAudioSession.Category.record)))
-    try audioSession.setMode(AVAudioSession.Mode.measurement)
+    try audioSession.setCategory(.record)
+    try audioSession.setMode(.measurement)
     try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
 
     recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
@@ -140,9 +139,4 @@ public class SBSpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
     speechRecognitionTimeout?.invalidate()
     speechRecognitionTimeout = nil
   }
-}
-
-// Helper function inserted by Swift 4.2 migrator.
-private func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
-  return input.rawValue
 }

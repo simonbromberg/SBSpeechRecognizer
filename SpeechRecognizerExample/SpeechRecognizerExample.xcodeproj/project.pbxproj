@@ -3,23 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F469C7732B1B065C00F8C70A /* SBSpeechRecognizer in Frameworks */ = {isa = PBXBuildFile; productRef = F469C7722B1B065C00F8C70A /* SBSpeechRecognizer */; };
 		F498F4382B19B4C200672FFF /* SpeechRecognizerExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F498F4372B19B4C200672FFF /* SpeechRecognizerExampleApp.swift */; };
-		F498F43A2B19B4C200672FFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F498F4392B19B4C200672FFF /* ContentView.swift */; };
 		F498F43C2B19B4C300672FFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F498F43B2B19B4C300672FFF /* Assets.xcassets */; };
 		F498F43F2B19B4C300672FFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F498F43E2B19B4C300672FFF /* Preview Assets.xcassets */; };
-		F498F4472B19B58B00672FFF /* SBSpeechRecognizer in Frameworks */ = {isa = PBXBuildFile; productRef = F498F4462B19B58B00672FFF /* SBSpeechRecognizer */; };
+		F4B896D62B19BBE2004E696D /* SpeechRecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B896D52B19BBE2004E696D /* SpeechRecognitionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F498F4342B19B4C200672FFF /* SpeechRecognizerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechRecognizerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F498F4372B19B4C200672FFF /* SpeechRecognizerExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizerExampleApp.swift; sourceTree = "<group>"; };
-		F498F4392B19B4C200672FFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F498F43B2B19B4C300672FFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F498F43E2B19B4C300672FFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4B896D52B19BBE2004E696D /* SpeechRecognitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,18 +27,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F498F4472B19B58B00672FFF /* SBSpeechRecognizer in Frameworks */,
+				F469C7732B1B065C00F8C70A /* SBSpeechRecognizer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F469C76C2B1B055B00F8C70A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F498F42B2B19B4C200672FFF = {
 			isa = PBXGroup;
 			children = (
 				F498F4362B19B4C200672FFF /* SpeechRecognizerExample */,
 				F498F4352B19B4C200672FFF /* Products */,
+				F469C76C2B1B055B00F8C70A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				F498F4372B19B4C200672FFF /* SpeechRecognizerExampleApp.swift */,
-				F498F4392B19B4C200672FFF /* ContentView.swift */,
+				F4B896D52B19BBE2004E696D /* SpeechRecognitionView.swift */,
 				F498F43B2B19B4C300672FFF /* Assets.xcassets */,
 				F498F43D2B19B4C300672FFF /* Preview Content */,
 			);
@@ -86,7 +94,7 @@
 			);
 			name = SpeechRecognizerExample;
 			packageProductDependencies = (
-				F498F4462B19B58B00672FFF /* SBSpeechRecognizer */,
+				F469C7722B1B065C00F8C70A /* SBSpeechRecognizer */,
 			);
 			productName = SpeechRecognizerExample;
 			productReference = F498F4342B19B4C200672FFF /* SpeechRecognizerExample.app */;
@@ -117,7 +125,7 @@
 			);
 			mainGroup = F498F42B2B19B4C200672FFF;
 			packageReferences = (
-				F498F4452B19B58B00672FFF /* XCRemoteSwiftPackageReference "SBSpeechRecognizer" */,
+				F469C7712B1B065C00F8C70A /* XCLocalSwiftPackageReference ".." */,
 			);
 			productRefGroup = F498F4352B19B4C200672FFF /* Products */;
 			projectDirPath = "";
@@ -145,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F498F43A2B19B4C200672FFF /* ContentView.swift in Sources */,
+				F4B896D62B19BBE2004E696D /* SpeechRecognitionView.swift in Sources */,
 				F498F4382B19B4C200672FFF /* SpeechRecognizerExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +291,8 @@
 				DEVELOPMENT_TEAM = 7289C5AAFZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The app uses the microphone for user-initiated audio transcribing.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "The app uses speech recognition to transcribe user-initiated audio recordings.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -312,6 +322,8 @@
 				DEVELOPMENT_TEAM = 7289C5AAFZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The app uses the microphone for user-initiated audio transcribing.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "The app uses speech recognition to transcribe user-initiated audio recordings.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -353,21 +365,16 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		F498F4452B19B58B00672FFF /* XCRemoteSwiftPackageReference "SBSpeechRecognizer" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/simonbromberg/SBSpeechRecognizer";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		F469C7712B1B065C00F8C70A /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F498F4462B19B58B00672FFF /* SBSpeechRecognizer */ = {
+		F469C7722B1B065C00F8C70A /* SBSpeechRecognizer */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F498F4452B19B58B00672FFF /* XCRemoteSwiftPackageReference "SBSpeechRecognizer" */;
 			productName = SBSpeechRecognizer;
 		};
 /* End XCSwiftPackageProductDependency section */

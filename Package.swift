@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "SBSpeechRecognizer",
+    platforms: [.iOS(.v12), .macCatalyst(.v13), .visionOS(.v1)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(

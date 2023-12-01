@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import SBSpeechRecognizer
 
 @main
 struct SpeechRecognizerExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SpeechRecognitionView()
         }
     }
 }
