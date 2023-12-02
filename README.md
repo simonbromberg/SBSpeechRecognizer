@@ -1,17 +1,11 @@
 # SBSpeechRecognizer
 
-`SBSpeechRecognizer`` provides a class to make it easier to interact with speech recognition in iOS.
-
-## Example
-
-Open and run the example project.
-
-## Requirements
+`SBSpeechRecognizer` provides a class to make it easier to interact with speech recognition in iOS.
 
 ## Installation
 
-SBSpeechRecognizer is available through Swift Package Manager.
+`SBSpeechRecognizer` is available through Swift Package Manager.
 
 ## License
 
-SBSpeechRecognizer is available under the MIT license. See the LICENSE file for more info.
+`SBSpeechRecognizer` is available under the MIT license. See the [LICENSE](./LICENSE) for more info.
